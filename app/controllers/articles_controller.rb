@@ -8,5 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   def search
+    articles = Article.where('title LIKE ?', "%#{params[:query]}%").first(10)
+    render '/articles/index', locals: { articles: articles }
   end
 end

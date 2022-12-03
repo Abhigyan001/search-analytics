@@ -1,7 +1,19 @@
-<%= form_with url: articles_search_path, method: :post, authenticity_token: false, data: { controller: "search", search_target: "form", turbo_frame: "articles" } do |form| %>
-    <%= form.text_field :query,
-      placeholder: "Search by title",
-      autocomplete: "off",
-      data: { action: "input->search#search" }
-    %>
+<div>
+  <h1>Search Article</h1>
+
+  <div id="articles-section">
+    <%= render partial: '/shared/form' %>
+  </div>
+
+  <%= turbo_frame_tag "articles" do %>
+    <% if @articles.empty? %>
+     <div></div>
+    <% else %>
+      <% @articles.each do |article| %>
+        <ul class="article">
+          <li><%= article.title %></li>
+        </ul>
+      <% end %>
+    <% end %>
   <% end %>
+</div>
