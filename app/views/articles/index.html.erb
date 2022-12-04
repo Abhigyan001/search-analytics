@@ -1,4 +1,8 @@
 <section class='headline-section'>
-  <span><%= link_to 'See Search Analytics', analytics_path %></span>
+  <div class="text-center">
+    <button type="button" class="btn btn-info btn-lg analytics-button">
+      <%= link_to 'See Search Analytics', analytics_path, {:style=>'color:#FFFFFF;'} %>
+    </button>
+  </div>
   <%= render partial: '/shared/homepage', locals: { articles: @articles } %>
 </section>

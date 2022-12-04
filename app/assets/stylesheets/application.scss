@@ -1,2 +1,45 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #757575;
+}
+
+.homepage, .article {
+  margin-top: 5%;
+}
+
+.article {
+  border: 2px solid green;
+  padding: 5%;
+}
+
+.article p {
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+.analytics-button {
+  margin-top: 3%;
+}
+
+.analytics-table {
+  border: 3px solid grey;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.table-title {
+  margin-top: 5%;  
+}
+
+.table-head {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
