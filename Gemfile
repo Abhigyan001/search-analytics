@@ -43,6 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 gem "faker"
 gem "fuzzy-string-match"
+gem 'rspec-rails', '~> 5.0.0'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

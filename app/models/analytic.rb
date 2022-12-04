@@ -1,6 +1,6 @@
 class Analytic < ApplicationRecord
   require 'fuzzystringmatch'
-  validates :query, presence: true, length: { minimum: 2, maximum: 30 }
+  validates :query, presence: true, length: { minimum: 2, maximum: 40 }
   validates :session_id, presence: true
 
   def searched_query(search)
