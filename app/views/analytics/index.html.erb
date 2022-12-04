@@ -1,5 +1,6 @@
-<div id="searches">
-  <h1> Top 50 Searches </h1>
+<div id="search-list">
+  <span><%= link_to '<--Go to Homepage', root_path %></span>
+  <h1 class='analytics-section__heading'> Search Analytics: Recent Searches </h1>
   <ul id="searches-list">
     <% @user_search_list.each do |search| %>
       <li><%= search %></li>

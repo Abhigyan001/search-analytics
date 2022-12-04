@@ -10,15 +10,18 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    articles = Article.where('title LIKE ?', "%#{params[:query]}%").first(10)
-    render '/articles/index', locals: { articles: articles }
+    @articles = Article.where('title LIKE ?', "%#{params[:query]}%").first(10)
+    render '/articles/index', locals: { articles: @articles }
     query_save(params[:query], session[:user_id])
   end
+
+  protected
 
   # save new query
 
   def query_save(query, session)
     return if query.length <= 2 || query.nil?
+
     new_query = Analytic.new(user_params)
     new_query.session_id = session
     session_last_query = Analytic.where(session_id: session).last
