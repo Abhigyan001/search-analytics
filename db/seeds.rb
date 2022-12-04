@@ -8,8 +8,8 @@
 require 'faker'
 
 70.times do
-    Article.create(
+  Article.create(
     title: Faker::Game.title,
     body: Faker::Lorem.paragraph(sentence_count: 15)
-    )
-  end
+  )
+end

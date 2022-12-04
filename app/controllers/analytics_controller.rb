@@ -1,6 +1,6 @@
 class AnalyticsController < ApplicationController
   def query_list
-    Analytic.group(:query).pluck('query, count(query) as COUNT')
+    Analytic.group(:query, :updated_at, :articles).pluck('query, count(query) as COUNT')
   end
 
   def sort_query_list

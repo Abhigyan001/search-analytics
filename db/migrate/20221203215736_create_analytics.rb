@@ -2,9 +2,7 @@ class CreateAnalytics < ActiveRecord::Migration[7.0]
   def change
     create_table :analytics do |t|
       t.string :query
-      t.integer :count
-      t.integer :users
-      t.integer :articles
+      t.integer :articles, default: 0
       t.string :session_id
 
       t.timestamps
