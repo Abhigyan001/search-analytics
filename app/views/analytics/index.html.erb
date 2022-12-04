@@ -1,4 +1,8 @@
 <div id="searches">
   <h1> Top 50 Searches </h1>
-  
+  <ul id="searches-list">
+    <% @user_search_list.each do |search| %>
+      <li><%= search %></li>
+    <% end %>
+  </ul>
 </div>
