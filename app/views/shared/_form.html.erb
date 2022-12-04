@@ -1,9 +1,9 @@
-<div>
-  <%= form_with url: articles_search_path, method: :post, authenticity_token: false, data: { controller: "querySearch", search_target: "form", turbo_frame: "articles" } do |form| %>
+<div class='form-container'>
+  <%= form_with url: articles_search_path, method: :post, authenticity_token: false, data: { controller: "search", search_target: "form", turbo_frame: "articles" } do |form| %>    
     <%= form.text_field :query,
       placeholder: "Search Article...",
       autocomplete: "off",
-      data: { action: "input->search#search" }
+      data: { action: "input->search#querySearch" }
     %>
   <% end %>
 </div>

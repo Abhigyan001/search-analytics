@@ -1,6 +1,7 @@
-<div class="article">
-  <div>
-    <h1><%= @article.title %></h1>
-    <p><%= @article.body  %></p>
-  </div>
-</div>
+<section class="article">
+  <span><%= link_to '<--Homepage', root_path %></span>
+    <div>
+      <h1><%= @article.title %> </h1>
+      <p> <%= @article.body  %> </p>
+    </div>
+</section>

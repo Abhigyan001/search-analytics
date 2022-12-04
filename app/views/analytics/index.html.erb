@@ -1,9 +1,16 @@
-<div id="search-list">
-  <span><%= link_to '<--Go to Homepage', root_path %></span>
-  <h1 class='analytics-section__heading'> Search Analytics: Recent Searches </h1>
-  <ul id="searches-list">
-    <% @user_search_list.each do |search| %>
-      <li><%= search %></li>
+<section>
+  <span><%= link_to '<--Homepage', root_path %></span>
+  <h1> Search Analytics: Common Queries </h1>
+  <table>
+    <tr>
+      <th>Query</th>
+      <th>Search Frequency</th>
+    </tr>
+    <% @user_search_list.each_with_index do |analytics, index| %>
+      <tr>
+        <td> <%= analytics[0]  %> </td>
+        <td> <%= analytics[1] %> </td>
+      </tr>
     <% end %>
-  </ul>
-</div>
+  </table>
+</section>

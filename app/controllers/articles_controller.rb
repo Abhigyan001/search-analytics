@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
     else
       articles = Article.search_article(params[:query])
       render(partial: '/shared/homepage', locals: { articles: articles })
-      query_save(params[:query], session[:user_id], articles.length)
+      query_save(params[:query], session[:user_id])
     end
   end
 
@@ -23,16 +23,16 @@ class ArticlesController < ApplicationController
 
   # save new query
 
-  def query_save(query, session, articles)
+  def query_save(query, session)
     return if query.length <= 2 || query.nil?
 
-    new_query = Analytic.new(query: query, articles: articles)
+    new_query = Analytic.new(query: query)
     new_query.session_id = session
     session_last_query = Analytic.where(session_id: session).last
     if session_last_query.nil? || !session_last_query.searched_query(query)
       new_query.save
     elsif session_last_query.query.length < query.length
-      session_last_query.update(query: query, articles: articles)
+      session_last_query.update(query: query)
     end
   end
 

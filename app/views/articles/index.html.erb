@@ -1,7 +1,4 @@
-<div>
-  <%= link_to 'Analytics', analytics_path %>
-
-  <h1>Search Article</h1>
-
+<section class='headline-section'>
+  <span><%= link_to 'Analytics -->', analytics_path %></span>
   <%= render partial: '/shared/homepage', locals: { articles: @articles } %>
-</div>
+</section>
