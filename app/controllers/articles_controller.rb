@@ -11,11 +11,11 @@ class ArticlesController < ApplicationController
 
   def search
     if params[:query].empty?
-      render '/articles/index', locals: { articles: [] }
+      render(partial: '/shared/homepage', locals: { articles: [] })
     else
-      @articles = Article.search_article(params[:query])
-      render '/articles/index', locals: { articles: @articles }
-      query_save(params[:query], session[:user_id], @articles.length)
+      articles = Article.search_article(params[:query])
+      render(partial: '/shared/homepage', locals: { articles: articles })
+      query_save(params[:query], session[:user_id], articles.length)
     end
   end
 

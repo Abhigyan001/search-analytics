@@ -1,0 +1,15 @@
+<div class='search'>
+  <%= render partial: '/shared/form' %>
+
+  <%= turbo_frame_tag "articles" do %>
+    <% if !articles.empty? %>
+      <div class='queries'>
+        <% articles.each do |article| %>
+          <ul>
+              <li><a href='/articles/<%= article[1]%>'><%= article[0] %></a></li>
+          </ul>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

@@ -1,10 +1,10 @@
 class AnalyticsController < ApplicationController
   def query_list
-    Analytic.group(:query, :updated_at, :articles).pluck('query, count(query) as COUNT')
+    Analytic.group(:query, :articles, :updated_at).pluck('query, count(query) as COUNTER, articles, updated_at')
   end
 
   def sort_query_list
-    query_list.sort_by { |element| element[1] }.reverse.first(50)
+    query_list.sort_by { |element| element[1] }.reverse.first(20)
   end
 
   def index
