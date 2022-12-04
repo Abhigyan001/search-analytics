@@ -6,6 +6,6 @@ class Analytic < ApplicationRecord
   def searched_query(search)
     fuzzy_match = FuzzyStringMatch::JaroWinkler.create(:native)
     query_match = fuzzy_match.getDistance(search, query)
-    query_match > 0.8
+    query_match > 0.7
   end
 end

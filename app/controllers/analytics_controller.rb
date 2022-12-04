@@ -4,7 +4,7 @@ class AnalyticsController < ApplicationController
   end
 
   def sort_query_list
-    query_list.sort_by { |element| element[1] }.reverse.first(20)
+    query_list.sort_by { |element| element[1] }.reverse.first(15)
   end
 
   def index
