@@ -24,7 +24,7 @@ describe 'Analytics Controller', type: :feature do
 
   it 'should not show queries that are not in top 15' do
     Analytic.create(
-      query: 'above twenty',
+      query: 'above fifteen',
       session_id: session_id
     )
     visit '/analytics'
