@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="text-center">
+    <button type="button" class="btn btn-success btn-lg homepage">
+      <%= link_to 'Go to Homepage', root_path, {:style=>'color:#FFFFFF;'} %>
+    </button>
+  </div>
+  <div class="card">
+    <div class="card-body article">
+      <h3 class="card-title"><%= @article.title %></h3>
+      <p class="card-text text-justify"><%= @article.body  %></p>
+    </div>
+  </div>
+</div>

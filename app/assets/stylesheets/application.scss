@@ -1,0 +1,91 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #757575;
+}
+
+.homepage, .article {
+  margin-top: 5%;
+}
+
+.article {
+  border: 2px solid green;
+  padding: 5%;
+}
+
+.article p {
+  font-size: 16px;
+  margin-top: 2%;
+}
+
+.analytics-button {
+  margin-top: 3%;
+}
+
+.analytics-table {
+  border: 3px solid grey;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.table-title {
+  margin-top: 4%;
+}
+
+.table-head {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.heading-img {
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.search-form {
+  position: relative;
+  height: 5rem;
+  width: 60%;
+  border-radius: 2rem;
+  padding: 0 5rem;
+  border: 2px solid grey;
+  font-size: 1.8rem;
+}
+
+.search-icon {
+	position: absolute;
+  height: 2.5rem;
+  z-index: 5;
+  margin: 1.5rem;
+}
+
+.list-icon {
+	height: 20px;
+}
+
+.search-list {
+	list-style-type: none;
+	margin-left: 20rem;
+	margin-top: 1%;
+}
+
+.list-item {
+	padding: 1%;
+	width: 70%;
+	cursor: pointer;
+}
+
+.list-item:hover {
+	background-color: #E3E0E0;
+	border-left: 6px solid black;
+}
+
+.list-item a {
+	color: black;
+	font-size: 18px;
+}

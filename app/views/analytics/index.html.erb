@@ -1,0 +1,25 @@
+<div class='container'>
+  <div class="text-center">
+    <button type="button" class="btn btn-success btn-lg homepage">
+      <%= link_to 'Go to Homepage', root_path, {:style=>'color:#FFFFFF;'} %>
+    </button>
+  </div>
+
+  <h1 class='text-center table-title'> Most Common Queries </h1>
+  <table class="table table-hover analytics-table">
+    <thead class="table-head">
+      <tr>
+        <td>Query</td>
+        <td>Search Frequency</td>
+      <tr>
+    </thead>
+    <tbody>
+      <% @user_search_list.each_with_index do |analytics, index| %>
+        <tr>
+          <td> <%= analytics[0]  %> </td>
+          <td> <%= analytics[1] %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
