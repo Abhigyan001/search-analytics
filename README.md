@@ -4,7 +4,7 @@
 
 ## Project Demo
 
-![Watch the video](app/assets/videos/project-demo.mkv)
+![Watch the project demo](https://www.youtube.com/watch?v=cw3o_kR2Pgk)
 
 # Built with
 - Ruby
@@ -37,7 +37,7 @@
 
 ## Project Installation Video
 
-
+![Watch the project demo](https://www.youtube.com/watch?v=cxob5k5G1js)
 
 ## Run test on project with
 
