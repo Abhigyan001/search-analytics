@@ -29,6 +29,7 @@ class ArticlesController < ApplicationController
     new_query = Analytic.new(query: query)
     new_query.session_id = session
     session_last_query = Analytic.where(session_id: session).last
+
     if session_last_query.nil? || !session_last_query.searched_query(query)
       new_query.save
     elsif session_last_query.query.length < query.length
@@ -37,6 +38,6 @@ class ArticlesController < ApplicationController
   end
 
   def session_present
-    session[:user_id] = SecureRandom.urlsafe_base64(16) if session[:user_id].nil?
+    session[:user_id] = SecureRandom.urlsafe_base64(12) if session[:user_id].nil?
   end
 end

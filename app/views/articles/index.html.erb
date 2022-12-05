@@ -1,8 +1,11 @@
-<section class='headline-section'>
-  <div class="text-center">
+<div class='headline-section text-center'>
+  <div>
     <button type="button" class="btn btn-info btn-lg analytics-button">
       <%= link_to 'See Search Analytics', analytics_path, {:style=>'color:#FFFFFF;'} %>
     </button>
   </div>
+  <div>
+    <%= image_tag  "search-heading.png", height: 100, class: "heading-img" %>
+  </div>
   <%= render partial: '/shared/homepage', locals: { articles: @articles } %>
-</section>
+</div>

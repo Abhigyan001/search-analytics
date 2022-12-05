@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Analytics Controller', type: :feature do
-  session_id = SecureRandom.urlsafe_base64(16)
+  session_id = SecureRandom.urlsafe_base64(12)
 
   before(:all) do
     30.times do |e|

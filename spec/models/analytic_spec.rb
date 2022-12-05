@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Analytics', type: :model do
-  session_id = SecureRandom.urlsafe_base64(16)
+  session_id = SecureRandom.urlsafe_base64(12)
   paragraph = Faker::Lorem.paragraph(sentence_count: 100)
 
   it 'is not valid without session_id' do
