@@ -5,8 +5,13 @@
     <% if !articles.empty? %>
       <div>
         <% articles.each do |article| %>
-          <ul>
-            <li> <a href='/articles/<%= article[1]%>'><%= article[0] %></a> </li>
+          <ul class="search-list">
+            <li class= "list-item text-left">
+              <a href='/articles/<%= article[1]%>'>
+                <%= image_tag "search-icon.jpg", class: "list-icon" %>
+                <%= article[0] %>
+              </a>
+            </li>
           </ul>
         <% end %>
       </div>

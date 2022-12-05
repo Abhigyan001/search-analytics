@@ -28,11 +28,11 @@ a:hover, a:focus {
   border: 3px solid grey;
   font-size: 18px;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .table-title {
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .table-head {
@@ -43,8 +43,8 @@ a:hover, a:focus {
 }
 
 .heading-img {
-	margin-top: 7%;
-	margin-bottom: 3%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 }
 
 .search-form {
@@ -69,8 +69,23 @@ a:hover, a:focus {
 }
 
 .search-list {
-	position: absolute;
-  width: 30%;
-  z-index: -11;
-  box-shadow: 0.8rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	list-style-type: none;
+	margin-left: 20rem;
+	margin-top: 1%;
+}
+
+.list-item {
+	padding: 1%;
+	width: 70%;
+	cursor: pointer;
+}
+
+.list-item:hover {
+	background-color: #E3E0E0;
+	border-left: 6px solid black;
+}
+
+.list-item a {
+	color: black;
+	font-size: 18px;
 }
