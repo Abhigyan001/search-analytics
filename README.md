@@ -1,6 +1,6 @@
 # Search Analysis
 
-> Search Analysis is a web app that lets users search for articles using the search box. The app also dispalys search query analytics that display what users are mostly searching for. User can also see the article details by clicking on the article title. The search analytics will only show users' complete query searches.
+> Search Analysis is a web app that lets users search for articles using the search box. The app also displays search query analytics that display what users are mostly searching for. User can also see the article details by clicking on the article title. The search analytics will only show users' complete query searches.
 
 ## Project Demo
 

@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
 
   protected
 
-  # save new query
+  # save valid new query and replace incomplete query with a complete one
 
   def query_save(query, session)
     return if query.length <= 2 || query.nil?
