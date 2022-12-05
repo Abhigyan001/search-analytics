@@ -4,7 +4,9 @@
 
 ## Project Demo
 
-![Watch the project demo](https://www.youtube.com/watch?v=cw3o_kR2Pgk)
+> Click the image below to watch the project demo.
+
+[![project-demo-youtube](https://user-images.githubusercontent.com/29688358/205584999-5e1ab8bd-8cdc-4619-9a26-e88d806f90a5.png)](https://www.youtube.com/watch?v=cw3o_kR2Pgk)
 
 # Built with
 - Ruby
@@ -37,7 +39,9 @@
 
 ## Project Installation Video
 
-![Watch the project demo](https://www.youtube.com/watch?v=cxob5k5G1js)
+> Click the image below to watch the project installation.
+
+[![project-install](https://user-images.githubusercontent.com/29688358/205585638-ae0de324-fafd-47aa-9f8e-75d2ab597a1d.png)](https://www.youtube.com/watch?v=cxob5k5G1js)
 
 ## Run test on project with
 
