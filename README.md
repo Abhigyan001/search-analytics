@@ -4,7 +4,7 @@
 
 ## Project Demo
 
-[![Watch the video](./app/assets/videos/project-demo.mkv)]
+![Watch the video](app/assets/videos/project-demo.mkv)
 
 # Built with
 - Ruby
@@ -37,7 +37,7 @@
 
 ## Project Installation Video
 
-[![Watch the video](./app/assets/videos/project-install.mkv)]
+
 
 ## Run test on project with
 
