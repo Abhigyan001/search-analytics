@@ -8,6 +8,6 @@ describe 'Articles Controller', type: :feature do
 
   it 'should have a body' do
     visit '/'
-    expect(page).to have_content('Search Articles')
+    expect(page).to have_css('.heading-img')
   end
 end
