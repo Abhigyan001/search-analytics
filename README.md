@@ -27,7 +27,7 @@
 
   1. Open Terminal.
   2. Navigate to your desired location to download the contents of this repository.
-  3. Copy and paste the following code into the Terminal: git clone https://github.com/Abhigyan001/search-analytics
+  3. Copy and paste the following code into the Terminal: ```git clone https://github.com/Abhigyan001/search-analytics```
   4. Run ```cd search-analytics```.
   5. Run ```bundle install``` to get the necesary gems.
   6. Configure ```database.yml``` file and include your PostgreSQL credentials.
