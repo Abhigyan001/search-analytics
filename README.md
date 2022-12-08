@@ -2,6 +2,12 @@
 
 > Search Analysis is a web app that lets users search for articles using the search box. The app also displays search query analytics that display what users are mostly searching for. User can also see the article details by clicking on the article title. The search analytics will only show users' complete query searches.
 
+## Live Link
+
+> Click the link below to interact with the live project.
+
+[Search Analytics](https://search-analytics.onrender.com/)
+
 ## Project Demo
 
 > Click the image below to watch the project demo.
